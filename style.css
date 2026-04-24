@@ -270,28 +270,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .hero-slide.is-active { opacity: 1; }
 
-/* 実画像を入れる場合はここを差し替え */
-.hero-slide--1 { /* background-image: url('images/hero-1.jpg'); */ }
-.hero-slide--2 {
-  background-image:
-    linear-gradient(135deg, rgba(61, 40, 23, 0.0) 0%, rgba(31, 21, 16, 0.3) 100%),
-    radial-gradient(circle at 70% 40%, #7a5a3e 0%, #3d2817 60%, #1f1510 100%);
-}
-.hero-slide--3 {
-  background-image:
-    linear-gradient(135deg, rgba(61, 40, 23, 0.0) 0%, rgba(31, 21, 16, 0.3) 100%),
-    radial-gradient(circle at 50% 60%, #8b6f47 0%, #3d2817 60%, #1f1510 100%);
-}
-.hero-slide--4 {
-  background-image:
-    linear-gradient(135deg, rgba(61, 40, 23, 0.0) 0%, rgba(31, 21, 16, 0.3) 100%),
-    radial-gradient(circle at 40% 50%, #6b4a32 0%, #2d1e14 60%, #1f1510 100%);
-}
-.hero-slide--5 {
-  background-image:
-    linear-gradient(135deg, rgba(61, 40, 23, 0.0) 0%, rgba(31, 21, 16, 0.3) 100%),
-    radial-gradient(circle at 60% 30%, #a0825a 0%, #4a3220 60%, #1f1510 100%);
-}
+/* 実画像 */
+.hero-slide--1 { background-image: url('images/hero-01-exterior.jpg'); }
+.hero-slide--2 { background-image: url('images/hero-02-doma.jpg'); }
+.hero-slide--3 { background-image: url('images/hero-03-engawa.jpg'); }
+.hero-slide--4 { background-image: url('images/hero-04-hari.jpg'); }
+.hero-slide--5 { background-image: url('images/hero-05-morning.jpg'); }
 
 .hero-overlay {
   position: absolute;
@@ -582,6 +566,29 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .feature-card .image-frame { margin-bottom: 28px; }
 .image-placeholder--square { aspect-ratio: 1 / 1; }
 .image-placeholder--map { aspect-ratio: 4 / 3; }
+
+/* 実画像が入るときは .has-image を付け、プレースホルダーを非表示にする */
+.image-placeholder.has-image {
+  background: none;
+  border: none;
+}
+.image-placeholder.has-image::before,
+.image-placeholder.has-image::after { display: none; }
+.image-placeholder.has-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* page-hero の背景画像 */
+.page-hero-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.1) brightness(0.92);
+}
 
 /* 金の外枠(オフセット + 内側ダブルライン) */
 .image-frame {

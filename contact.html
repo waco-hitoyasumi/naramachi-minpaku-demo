@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>お問い合わせ | ならまち古民家宿 月日 -tsukihi-</title>
+<meta name="description" content="ならまち古民家宿「月日」へのお問い合わせ・ご予約相談フォーム。2営業日以内にご返信いたします。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mascot-tanuki" viewBox="0 0 80 72">
+      <g fill="currentColor" stroke="none">
+        <path d="M18 16 C 14 8, 22 4, 26 10 L 28 18 Z"/>
+        <path d="M62 16 C 66 8, 58 4, 54 10 L 52 18 Z"/>
+        <ellipse cx="40" cy="28" rx="22" ry="20"/>
+        <path d="M22 40 C 18 52, 24 64, 40 64 C 56 64, 62 52, 58 40 Z"/>
+        <path d="M62 46 C 72 42, 78 50, 72 58 C 68 62, 62 58, 60 54 Z"/>
+      </g>
+      <g fill="#faf6f0" stroke="none">
+        <ellipse cx="32" cy="28" rx="6" ry="4.5"/>
+        <ellipse cx="48" cy="28" rx="6" ry="4.5"/>
+        <ellipse cx="40" cy="36" rx="7" ry="5"/>
+      </g>
+      <g fill="#2a1f15">
+        <circle cx="32" cy="28" r="1.6"/>
+        <circle cx="48" cy="28" r="1.6"/>
+        <ellipse cx="40" cy="33" rx="1.6" ry="1.2"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header is-scrolled" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo" aria-label="ならまち古民家宿 月日">
+      <span class="logo-mark" aria-hidden="true">
+        <svg class="logo-tanuki" viewBox="0 0 80 72"><use href="#mascot-tanuki"/></svg>
+      </span>
+      <span class="logo-stack">
+        <span class="logo-ja">ならまち古民家宿</span>
+        <span class="logo-name">月日</span>
+        <span class="logo-en">tsukihi</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="about.html"><span class="nav-en">About</span><span class="nav-jp">コンセプト</span></a></li>
+        <li><a href="rooms.html"><span class="nav-en">Rooms</span><span class="nav-jp">客室・設備</span></a></li>
+        <li><a href="price.html"><span class="nav-en">Price</span><span class="nav-jp">料金</span></a></li>
+        <li><a href="naramachi.html"><span class="nav-en">Naramachi</span><span class="nav-jp">ならまち</span></a></li>
+        <li><a href="access.html"><span class="nav-en">Access</span><span class="nav-jp">アクセス</span></a></li>
+        <li><a href="contact.html" class="nav-cta is-current">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="page-hero-bg" aria-hidden="true">
+    <div class="image-placeholder" data-label="文机と便箋"></div>
+  </div>
+  <div class="page-hero-overlay" aria-hidden="true"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-en">Contact</p>
+    <div class="ornament"><span></span><i></i><span></span></div>
+    <h1 class="page-hero-title">お問い合わせ・<br class="sp-only" />ご予約相談。</h1>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Contact</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- ============================
+     Contact Form
+============================ -->
+<section class="section section--contact" id="contact">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <p class="section-en">Contact</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">どうぞ、<br class="sp-only" />お気軽にご連絡ください。</h2>
+      <p class="section-desc">
+        ご予約のご相談、貸切利用のご相談、取材・撮影のお問い合わせなど、<br class="pc-only" />
+        お気軽にご連絡ください。2営業日以内にご返信いたします。
+      </p>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">お名前 <span class="required">必須</span></label>
+        <input type="text" id="name" name="name" required placeholder="山田 太郎" />
+      </div>
+      <div class="form-row">
+        <label for="email">メールアドレス <span class="required">必須</span></label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+      </div>
+      <div class="form-row">
+        <label for="tel">電話番号</label>
+        <input type="tel" id="tel" name="tel" placeholder="090-0000-0000" />
+      </div>
+      <div class="form-row form-row--split">
+        <div>
+          <label for="checkin">宿泊希望日(チェックイン)</label>
+          <input type="date" id="checkin" name="checkin" />
+        </div>
+        <div>
+          <label for="nights">宿泊日数</label>
+          <select id="nights" name="nights">
+            <option value="">選択してください</option>
+            <option value="1">1泊</option>
+            <option value="2">2泊</option>
+            <option value="3">3泊</option>
+            <option value="4+">4泊以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="guests">人数</label>
+        <select id="guests" name="guests">
+          <option value="">選択してください</option>
+          <option value="1">1名</option>
+          <option value="2">2名</option>
+          <option value="3">3名</option>
+          <option value="4">4名</option>
+          <option value="5">5名</option>
+          <option value="6">6名</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+        <textarea id="message" name="message" rows="6" required placeholder="ご質問やご要望をご記入ください"></textarea>
+      </div>
+      <div class="form-row form-row--check">
+        <label>
+          <input type="checkbox" id="privacy" name="privacy" required />
+          <span>プライバシーポリシーに同意する</span>
+        </label>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-submit">送信する</button>
+      </div>
+      <p class="form-thanks" id="formThanks" hidden>
+        お問い合わせありがとうございます。2営業日以内にご返信いたします。
+      </p>
+    </form>
+  </div>
+</section>
+
+<nav class="next-nav" aria-label="次のページへ">
+  <div class="next-nav-grid">
+    <a href="access.html" class="next-nav-item next-nav-prev">
+      <p class="next-nav-label">← Previous</p>
+      <p class="next-nav-en">Access</p>
+      <p class="next-nav-jp">アクセス</p>
+    </a>
+    <a href="index.html" class="next-nav-item next-nav-next">
+      <p class="next-nav-label">Back →</p>
+      <p class="next-nav-en">Home</p>
+      <p class="next-nav-jp">トップへ戻る</p>
+    </a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo-ja">ならまち古民家宿</p>
+        <p class="footer-logo-name">月日</p>
+        <p class="footer-logo-en">— tsukihi —</p>
+        <p class="footer-tagline">家の記憶が、<br />旅の記憶になる。</p>
+      </div>
+      <div class="footer-info">
+        <dl>
+          <dt>Address</dt>
+          <dd>〒630-0000<br />奈良県奈良市ならまち×-××-×</dd>
+          <dt>Tel</dt>
+          <dd>0742-00-0000<br /><span>受付 10:00-18:00</span></dd>
+          <dt>License</dt>
+          <dd>旅館業法許可番号<br />奈良市指令第0000号(サンプル)</dd>
+        </dl>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">コンセプト</a></li>
+          <li><a href="rooms.html">客室・設備</a></li>
+          <li><a href="price.html">料金</a></li>
+          <li><a href="naramachi.html">ならまち</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">&copy; 2026 Naramachi Kominka Inn Tsukihi. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

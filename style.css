@@ -1802,6 +1802,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   opacity: 0;
   animation: pageHeroRise 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 0.45s forwards;
 }
+/* PC時はタイトルを1行に収める(sp-only の br は display:none なので影響なし) */
+@media (min-width: 769px) {
+  .page-hero-content { max-width: none; }
+  .page-hero-title { white-space: nowrap; }
+}
 @keyframes pageHeroFade { to { opacity: 1; } }
 @keyframes pageHeroRise {
   from { opacity: 0; transform: translateY(16px); }

@@ -1768,7 +1768,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(31,21,16,0.2) 0%, rgba(31,21,16,0.08) 45%, rgba(31,21,16,0.4) 100%);
+  background: linear-gradient(180deg,
+    rgba(31,21,16,0.6) 0%,
+    rgba(31,21,16,0.45) 8%,
+    rgba(31,21,16,0.28) 18%,
+    rgba(31,21,16,0.15) 30%,
+    rgba(31,21,16,0.08) 50%,
+    rgba(31,21,16,0.4) 100%);
 }
 .page-hero-content {
   position: relative;

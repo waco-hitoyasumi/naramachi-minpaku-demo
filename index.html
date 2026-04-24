@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ならまち古民家宿 月日 -tsukihi- | 奈良・ならまちの一棟貸し古民家宿</title>
+<meta name="description" content="奈良・ならまちの古民家を改装した一棟貸しの宿「月日」。受け継がれた家の温もりをそのままに、旅人を迎えます。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================
+     SVG Defs — Mascots
+============================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mascot-tanuki" viewBox="0 0 80 72">
+      <g fill="currentColor" stroke="none">
+        <path d="M18 16 C 14 8, 22 4, 26 10 L 28 18 Z"/>
+        <path d="M62 16 C 66 8, 58 4, 54 10 L 52 18 Z"/>
+        <ellipse cx="40" cy="28" rx="22" ry="20"/>
+        <path d="M22 40 C 18 52, 24 64, 40 64 C 56 64, 62 52, 58 40 Z"/>
+        <path d="M62 46 C 72 42, 78 50, 72 58 C 68 62, 62 58, 60 54 Z"/>
+      </g>
+      <g fill="#faf6f0" stroke="none">
+        <ellipse cx="32" cy="28" rx="6" ry="4.5"/>
+        <ellipse cx="48" cy="28" rx="6" ry="4.5"/>
+        <ellipse cx="40" cy="36" rx="7" ry="5"/>
+      </g>
+      <g fill="#2a1f15">
+        <circle cx="32" cy="28" r="1.6"/>
+        <circle cx="48" cy="28" r="1.6"/>
+        <ellipse cx="40" cy="33" rx="1.6" ry="1.2"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============================
+     Header
+============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="site-logo" aria-label="ならまち古民家宿 月日">
+      <span class="logo-mark" aria-hidden="true">
+        <svg class="logo-tanuki" viewBox="0 0 80 72"><use href="#mascot-tanuki"/></svg>
+      </span>
+      <span class="logo-stack">
+        <span class="logo-ja">ならまち古民家宿</span>
+        <span class="logo-name">月日</span>
+        <span class="logo-en">tsukihi</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#concept"><span class="nav-en">Concept</span><span class="nav-jp">コンセプト</span></a></li>
+        <li><a href="#room"><span class="nav-en">Rooms</span><span class="nav-jp">客室</span></a></li>
+        <li><a href="#amenity"><span class="nav-en">Amenity</span><span class="nav-jp">設備</span></a></li>
+        <li><a href="#price"><span class="nav-en">Price</span><span class="nav-jp">料金</span></a></li>
+        <li><a href="#naramachi"><span class="nav-en">Naramachi</span><span class="nav-jp">ならまち</span></a></li>
+        <li><a href="#access"><span class="nav-en">Access</span><span class="nav-jp">アクセス</span></a></li>
+        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================
+     Hero (FV)
+============================ -->
+<section class="hero" id="top">
+  <div class="hero-slideshow" aria-hidden="true">
+    <div class="hero-slide hero-slide--1 is-active" data-label="古民家の外観(夕景)"></div>
+    <div class="hero-slide hero-slide--2" data-label="土間と格子戸"></div>
+    <div class="hero-slide hero-slide--3" data-label="縁側から望む坪庭"></div>
+    <div class="hero-slide hero-slide--4" data-label="梁の見える居間"></div>
+    <div class="hero-slide hero-slide--5" data-label="朝の光が差し込む客間"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <!-- 縦書きの添え書き -->
+  <p class="hero-vertical" aria-hidden="true">奈良・ならまち ― 一日一組の古民家宿</p>
+
+  <div class="hero-content">
+    <p class="hero-sub">Naramachi Kominka Inn</p>
+    <h1 class="hero-title">
+      <span class="hero-title-1">家の記憶が、</span>
+      <span class="hero-title-2">旅の記憶になる。</span>
+    </h1>
+    <p class="hero-lead">
+      奈良町の小路の奥、ひとつの古民家が、<br />
+      今日もまた、誰かの帰る場所になる。
+    </p>
+    <a href="#concept" class="hero-scroll">
+      <span>Scroll</span>
+      <i></i>
+    </a>
+  </div>
+
+  <!-- 朱印風のロゴマーク -->
+  <div class="hero-seal" aria-hidden="true">
+    <span>月日</span>
+  </div>
+</section>
+
+<!-- ============================
+     Concept / 由来
+============================ -->
+<section class="section section--concept" id="concept">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Concept</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">受け継いだ家を、<br class="sp-only" />旅のやすらぎに。</h2>
+    </div>
+
+    <div class="concept-grid">
+      <div class="concept-text">
+        <p class="lead">
+          「月日」はもともと、オーナーが幼い頃を過ごした実家でした。<br />
+          祖父母が丁寧に手入れしてきた土間、ふすま越しに聞こえた笑い声、縁側から見上げた夏の空──
+          家族の時間が静かに積み重なってきた、ひとつの古民家です。
+        </p>
+        <p>
+          両親が住まわれなくなった後、「この家をどう残そう」と悩んだ時期がありました。
+          取り壊すのは簡単でしたが、柱の傷も、縁側のきしみも、どれも家族の記憶そのもの。
+          なかなか手放せずにいたとき、ふと思ったのです。
+        </p>
+        <p class="quote">
+          「自分たちが大切にしてきたこの場所で、<br />
+          誰かに少しだけくつろいでもらえたら、<br />
+          この家は、まだ生きていけるのではないか」
+        </p>
+        <p>
+          そうして「残したい」気持ちは、「泊まってほしい」という気持ちに静かに変わっていきました。
+          建具や梁はそのままに、水回りや寝室だけを現代の暮らしに合わせて整え、
+          旅人がゆっくりと時間を忘れられる宿として、少しずつかたちを整えています。
+        </p>
+        <p>
+          家の古さは、不便さではなく、やさしさであってほしい。<br />
+          そんな願いを込めて、今日もこの家は、あなたの到着を待っています。
+        </p>
+        <p class="concept-sign">
+          — 月日 主人 <span class="concept-sign-seal" aria-hidden="true">印</span>
+        </p>
+      </div>
+
+      <div class="concept-image">
+        <div class="image-frame">
+          <div class="image-placeholder image-placeholder--tall" data-label="古民家の玄関・格子戸"></div>
+        </div>
+        <p class="image-caption">玄関の格子戸は当時のまま。開ける音までも、この家の一部です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Feature / 宿の魅力
+============================ -->
+<section class="section section--feature" id="feature">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Why Tsukihi</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">ここで過ごす、<br class="sp-only" />四つのやすらぎ。</h2>
+      <p class="section-desc">
+        長く家として生きてきた建物だからこそ味わえる、ホテルとは違う時間の流れを、<br class="pc-only" />
+        四つの視点からご紹介します。
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-num">01</div>
+        <div class="image-frame"><div class="image-placeholder image-placeholder--feature" data-label="畳の間でくつろぐ様子"></div></div>
+        <h3 class="feature-title">畳と木の香りに、<br />ほどけていく時間。</h3>
+        <p>
+          磨き上げた床板、新調した畳、そして古い梁。
+          素材の呼吸が感じられる空間は、不思議と肩の力が抜けていきます。
+          到着して一息、お茶を一杯。それだけで旅の疲れがゆっくりほぐれていきます。
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-num">02</div>
+        <div class="image-frame"><div class="image-placeholder image-placeholder--feature" data-label="坪庭と縁側"></div></div>
+        <h3 class="feature-title">縁側と坪庭が、<br />日常から旅人を連れ出す。</h3>
+        <p>
+          小さな坪庭に差す光を眺めながら、縁側に腰かける時間。
+          スマートフォンを置いて、ただ風の音や鳥の声に耳を澄ませるだけで、
+          ここが旅先であることをあらためて実感していただけます。
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-num">03</div>
+        <div class="image-frame"><div class="image-placeholder image-placeholder--feature" data-label="ならまちの路地"></div></div>
+        <h3 class="feature-title">扉の外は、<br />千年の町並み。</h3>
+        <p>
+          宿を一歩出れば、そこはもうならまちの路地。
+          格子戸の町家、老舗の甘味処、小さな雑貨店。
+          観光地でありながら、暮らしの気配が色濃く残るこの界隈を、
+          自分の家から歩き出すように楽しめます。
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-num">04</div>
+        <div class="image-frame"><div class="image-placeholder image-placeholder--feature" data-label="一棟貸しの室内"></div></div>
+        <h3 class="feature-title">一棟貸しで、<br />気兼ねなく、のびやかに。</h3>
+        <p>
+          「月日」は一日一組限定の一棟貸し。
+          ご家族での団らんも、気の置けない友人との夜更かしも、
+          誰にも気兼ねすることなく過ごしていただけます。
+          この家は、滞在中あなたたちだけのもの。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Room / 客室
+============================ -->
+<section class="section section--room" id="room">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Rooms</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">古民家の骨格を残した、<br class="sp-only" />やさしい住まい。</h2>
+      <p class="section-desc">
+        定員は最大6名。家族旅行やグループ旅行にもゆったりとお過ごしいただけます。
+      </p>
+    </div>
+
+    <div class="room-list">
+      <div class="room-item">
+        <div class="image-frame">
+          <div class="image-placeholder image-placeholder--wide" data-label="主寝室(畳)"></div>
+        </div>
+        <div class="room-text">
+          <p class="room-label">Room 01</p>
+          <h3 class="room-title">主寝室 ― 月の間</h3>
+          <p>
+            八畳の和室に、寝心地にこだわった低めのベッドを二台。
+            窓の外には坪庭の緑。朝は自然光で、ゆっくり目覚めていただけます。
+          </p>
+          <ul class="room-meta">
+            <li><span>広さ</span>8畳</li>
+            <li><span>定員</span>2名</li>
+            <li><span>ベッド</span>セミダブル × 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="room-item room-item--reverse">
+        <div class="image-frame">
+          <div class="image-placeholder image-placeholder--wide" data-label="離れの和室"></div>
+        </div>
+        <div class="room-text">
+          <p class="room-label">Room 02</p>
+          <h3 class="room-title">離れの間 ― 日の間</h3>
+          <p>
+            母屋から渡り廊下でつながる離れ。
+            少しこもって読書をしたり、昼寝をしたり。
+            家の中にもう一つ「静かな居場所」があります。
+          </p>
+          <ul class="room-meta">
+            <li><span>広さ</span>6畳</li>
+            <li><span>定員</span>2名</li>
+            <li><span>寝具</span>布団 × 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <div class="image-frame">
+          <div class="image-placeholder image-placeholder--wide" data-label="リビング・居間"></div>
+        </div>
+        <div class="room-text">
+          <p class="room-label">Room 03</p>
+          <h3 class="room-title">居間 ― 集いの間</h3>
+          <p>
+            古い梁をそのまま残した、天井の高い居間。
+            大きなローテーブルを囲んで、持ち寄ったお酒や奈良の味を、心ゆくまで楽しめます。
+          </p>
+          <ul class="room-meta">
+            <li><span>広さ</span>12畳</li>
+            <li><span>定員</span>補助布団 +2名可</li>
+            <li><span>設備</span>55型TV・スピーカー</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Amenity / 設備・アメニティ
+============================ -->
+<section class="section section--amenity" id="amenity">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Amenities &amp; Facilities</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">手ぶらで訪れ、<br class="sp-only" />我が家のように過ごす。</h2>
+      <p class="section-desc">
+        長い滞在でも不便なく過ごしていただけるよう、暮らしの道具を一通り揃えています。<br class="pc-only" />
+        奈良の草木を使ったオリジナルのバスアメニティもご用意しました。
+      </p>
+    </div>
+
+    <div class="amenity-grid">
+      <div class="amenity-card">
+        <div class="amenity-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M6 20 L20 6 L34 20 L34 34 L6 34 Z" />
+            <path d="M16 34 L16 22 L24 22 L24 34" />
+          </svg>
+        </div>
+        <h3 class="amenity-title">お部屋・リビング</h3>
+        <ul>
+          <li>羽毛布団・低反発枕</li>
+          <li>作務衣(ルームウェア)</li>
+          <li>バスローブ</li>
+          <li>加湿空気清浄機</li>
+          <li>Bluetooth スピーカー</li>
+          <li>55型 スマートTV</li>
+          <li>本棚(奈良・民芸・旅エッセイ)</li>
+        </ul>
+      </div>
+
+      <div class="amenity-card">
+        <div class="amenity-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M8 16 C 8 10, 14 6, 20 6 C 26 6, 32 10, 32 16" />
+            <path d="M6 18 L34 18" />
+            <path d="M8 18 L8 30 C 8 32, 10 34, 12 34 L28 34 C 30 34, 32 32, 32 30 L32 18" />
+          </svg>
+        </div>
+        <h3 class="amenity-title">水回り・バスルーム</h3>
+        <ul>
+          <li>檜張りの湯船</li>
+          <li>独立シャワールーム</li>
+          <li>奈良の草木アメニティ(シャンプー・リンス・ボディソープ)</li>
+          <li>洗顔・クレンジング・化粧水・乳液</li>
+          <li>バスタオル・フェイスタオル</li>
+          <li>ヘアドライヤー(高機能)</li>
+          <li>ドラム式洗濯乾燥機・アイロン</li>
+        </ul>
+      </div>
+
+      <div class="amenity-card">
+        <div class="amenity-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <rect x="7" y="10" width="26" height="22" rx="1" />
+            <path d="M7 18 L33 18" />
+            <circle cx="13" cy="14" r="1.2" fill="currentColor" />
+            <circle cx="18" cy="14" r="1.2" fill="currentColor" />
+            <path d="M14 24 L18 24 M22 24 L28 24 M14 28 L18 28 M22 28 L28 28" />
+          </svg>
+        </div>
+        <h3 class="amenity-title">キッチン・ダイニング</h3>
+        <ul>
+          <li>IHコンロ 2口・電子レンジ・トースター</li>
+          <li>大型冷蔵庫・食器洗い乾燥機</li>
+          <li>炊飯器・電気ケトル・ミルフォーマー</li>
+          <li>調理器具・食器一式(6名分)</li>
+          <li>大和茶・ドリップコーヒー</li>
+          <li>ミネラルウォーター</li>
+          <li>到着日の茶菓子(日替わり)</li>
+        </ul>
+      </div>
+
+      <div class="amenity-card">
+        <div class="amenity-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="20" cy="20" r="12" />
+            <path d="M20 8 L20 20 L28 24" />
+          </svg>
+        </div>
+        <h3 class="amenity-title">ご滞在のお楽しみ</h3>
+        <ul>
+          <li>高速 Wi-Fi(全室)</li>
+          <li>冷暖房完備(全室個別空調)</li>
+          <li>貸出自転車 2台</li>
+          <li>浴衣(ご希望の方)</li>
+          <li>オリジナルならまち散策マップ</li>
+          <li>番傘・扇子</li>
+          <li>ベビーベッド(要予約・無料)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="amenity-note">
+      <p>
+        <span class="amenity-note-label">Option</span>
+        朝食の持ち込みサービス(近隣パン店・和食店から)、夕食のケータリング、
+        奈良のお茶会体験など、オプションもご相談いただけます。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Price / 料金
+============================ -->
+<section class="section section--price" id="price">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Price</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">ご料金のご案内</h2>
+      <p class="section-desc">
+        一棟貸しのため、表示料金は一組様あたりの1泊料金です(税・サービス料込)。<br class="pc-only" />
+        最大6名様までご宿泊いただけます。
+      </p>
+    </div>
+
+    <div class="price-table">
+      <div class="price-card price-card--main">
+        <p class="price-tag">Weekday</p>
+        <h3 class="price-card-title">平日プラン</h3>
+        <p class="price-card-sub">日曜〜木曜ご宿泊</p>
+        <ul class="price-list">
+          <li><span>2名様</span><b>¥48,000<em>〜</em></b></li>
+          <li><span>3名様</span><b>¥58,000<em>〜</em></b></li>
+          <li><span>4名様</span><b>¥68,000<em>〜</em></b></li>
+          <li><span>5名様</span><b>¥76,000<em>〜</em></b></li>
+          <li><span>6名様</span><b>¥84,000<em>〜</em></b></li>
+        </ul>
+      </div>
+
+      <div class="price-card">
+        <p class="price-tag">Weekend</p>
+        <h3 class="price-card-title">休日・休前日</h3>
+        <p class="price-card-sub">金曜・土曜・祝前日</p>
+        <p class="price-extra">平日料金 <b>+ ¥10,000</b></p>
+        <p class="price-note">
+          例)2名様 ¥58,000〜 / 6名様 ¥94,000〜
+        </p>
+      </div>
+
+      <div class="price-card">
+        <p class="price-tag">High Season</p>
+        <h3 class="price-card-title">ハイシーズン</h3>
+        <p class="price-card-sub">GW・お盆・年末年始・紅葉期 など</p>
+        <p class="price-extra">平日料金 <b>+ ¥15,000</b></p>
+        <p class="price-note">
+          期間は年度ごとに変動いたします。<br />
+          詳しい日程は個別にご案内します。
+        </p>
+      </div>
+    </div>
+
+    <div class="price-extra-box">
+      <h3 class="price-extra-title">連泊割引</h3>
+      <div class="price-discount">
+        <div>
+          <p class="price-discount-label">3泊以上</p>
+          <p class="price-discount-value">10<em>%</em><span>OFF</span></p>
+        </div>
+        <div>
+          <p class="price-discount-label">7泊以上</p>
+          <p class="price-discount-value">15<em>%</em><span>OFF</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="price-include">
+      <p class="price-include-title">料金に含まれるもの</p>
+      <p>
+        宿泊費 / 一棟貸切利用料 / アメニティ一式 / Wi-Fi / 清掃費 / 到着日の茶菓子セット
+      </p>
+      <p class="price-include-note">
+        ※ チェックイン 15:00 / チェックアウト 11:00 <br />
+        ※ お一人様で宿泊の場合、2名様料金でお願いしております。 <br />
+        ※ ご宿泊料金は為替・燃料費等により変動する場合がございます。 <br />
+        ※ キャンセルポリシーはご予約確定時にご案内いたします。
+      </p>
+    </div>
+
+    <div class="price-cta">
+      <a href="#contact" class="btn btn-outline">ご予約・お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Naramachi / ならまちの魅力
+============================ -->
+<section class="section section--naramachi" id="naramachi">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Naramachi</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">ならまちを歩く、<br class="sp-only" />それもまた宿の一部。</h2>
+    </div>
+
+    <div class="naramachi-grid">
+      <div class="naramachi-image">
+        <div class="image-frame">
+          <div class="image-placeholder image-placeholder--tall" data-label="ならまちの町家通り"></div>
+        </div>
+      </div>
+      <div class="naramachi-text">
+        <p>
+          ならまちは、かつての元興寺(がんごうじ)の旧境内を中心に広がる、江戸から明治にかけての町家が残る歴史地区です。
+          碁盤目状に走る細い路地、格子戸の町家、軒先に吊るされた身代わり申──
+          大和の古い暮らしの気配が、今もそのまま息づいています。
+        </p>
+        <p>
+          派手な観光地ではありません。だからこそ、朝の静けさ、昼の光、夕方の町の表情、夜の提灯の灯り。
+          一日のなかでめまぐるしく変わる町の顔を、ゆっくり味わっていただけます。
+        </p>
+        <p>
+          老舗の和菓子店で季節の上生菓子をいただいたり、
+          古い町家を改装したカフェで一杯のコーヒーを楽しんだり。
+          予定を詰め込まないことが、この町を一番豊かに過ごす方法かもしれません。
+        </p>
+      </div>
+    </div>
+
+    <div class="nara-spots">
+      <h3 class="nara-spots-title">宿から歩いて行ける、おすすめの寄り道</h3>
+      <div class="nara-spots-grid">
+        <div class="spot-card">
+          <div class="image-placeholder image-placeholder--square" data-label="元興寺"></div>
+          <h4>元興寺</h4>
+          <p>世界遺産。国宝の極楽堂と、瓦に刻まれた千年の時間を静かに感じられます。</p>
+        </div>
+        <div class="spot-card">
+          <div class="image-placeholder image-placeholder--square" data-label="奈良公園の鹿"></div>
+          <h4>奈良公園</h4>
+          <p>宿から徒歩15分ほど。朝、鹿たちが目覚める時間帯の散歩が特に気持ちよく。</p>
+        </div>
+        <div class="spot-card">
+          <div class="image-placeholder image-placeholder--square" data-label="東大寺"></div>
+          <h4>東大寺</h4>
+          <p>大仏殿はもちろん、二月堂から見下ろす奈良の町の景色は圧巻です。</p>
+        </div>
+        <div class="spot-card">
+          <div class="image-placeholder image-placeholder--square" data-label="春日大社"></div>
+          <h4>春日大社</h4>
+          <p>朱色の回廊と、苔むす石灯籠。朝いちばんの参拝がおすすめです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Access
+============================ -->
+<section class="section section--access" id="access">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">Access</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">宿までの道のり</h2>
+    </div>
+
+    <div class="access-grid">
+      <div class="access-map">
+        <div class="image-frame">
+          <div class="image-placeholder image-placeholder--map" data-label="地図(Googleマップ等を埋め込み)"></div>
+        </div>
+      </div>
+      <div class="access-info">
+        <dl>
+          <dt>住所</dt>
+          <dd>〒630-0000 奈良県奈良市ならまち×-××-×(サンプル)</dd>
+          <dt>最寄駅</dt>
+          <dd>
+            近鉄奈良線「近鉄奈良駅」より徒歩 約12分<br />
+            JR関西本線「奈良駅」より徒歩 約18分
+          </dd>
+          <dt>お車でお越しの方</dt>
+          <dd>
+            近隣のコインパーキングをご利用ください。<br />
+            推奨駐車場のご案内は、ご予約確定後にお送りしています。
+          </dd>
+          <dt>チェックイン / アウト</dt>
+          <dd>15:00 / 11:00</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FAQ
+============================ -->
+<section class="section section--faq" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <p class="section-en">Q &amp; A</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">よくあるご質問</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>何名まで宿泊できますか?</summary>
+        <div class="faq-answer">
+          <p>最大6名様までご宿泊いただけます。7名以上でのご利用はご相談ください。</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>食事は付きますか?</summary>
+        <div class="faq-answer">
+          <p>素泊まりが基本ですが、キッチン設備が揃っておりますので、ならまちの食材を買って料理を楽しむ方も多くいらっしゃいます。近隣のおすすめ飲食店リストも宿内にご用意しています。また、ケータリングや朝食の持ち込みサービスもオプションでご利用いただけます。</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>子ども連れでも泊まれますか?</summary>
+        <div class="faq-answer">
+          <p>もちろん歓迎しております。古い建具も残っていますので、お子様の年齢や人数をご予約時にお知らせください。ベビーベッドの無料貸し出しもご用意しております。</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>ペットと一緒に泊まれますか?</summary>
+        <div class="faq-answer">
+          <p>大変恐れ入りますが、建物の特性上、現在はペットのご同伴はご遠慮いただいております。</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>駐車場はありますか?</summary>
+        <div class="faq-answer">
+          <p>敷地内に駐車場はございません。近隣のコインパーキングをご利用いただく形になります。ご予約確定後に詳しいご案内をお送りいたします。</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>キャンセル料はいつからかかりますか?</summary>
+        <div class="faq-answer">
+          <p>ご宿泊14日前より発生いたします。詳細はご予約確定時にご案内いたします。</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     Contact Form
+============================ -->
+<section class="section section--contact" id="contact">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <p class="section-en">Contact</p>
+      <div class="ornament"><span></span><i></i><span></span></div>
+      <h2 class="section-title">お問い合わせ・<br class="sp-only" />ご予約相談</h2>
+      <p class="section-desc">
+        ご予約のご相談、貸切利用のご相談、取材・撮影のお問い合わせなど、<br class="pc-only" />
+        お気軽にご連絡ください。2営業日以内にご返信いたします。
+      </p>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">お名前 <span class="required">必須</span></label>
+        <input type="text" id="name" name="name" required placeholder="山田 太郎" />
+      </div>
+      <div class="form-row">
+        <label for="email">メールアドレス <span class="required">必須</span></label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+      </div>
+      <div class="form-row">
+        <label for="tel">電話番号</label>
+        <input type="tel" id="tel" name="tel" placeholder="090-0000-0000" />
+      </div>
+      <div class="form-row form-row--split">
+        <div>
+          <label for="checkin">宿泊希望日(チェックイン)</label>
+          <input type="date" id="checkin" name="checkin" />
+        </div>
+        <div>
+          <label for="nights">宿泊日数</label>
+          <select id="nights" name="nights">
+            <option value="">選択してください</option>
+            <option value="1">1泊</option>
+            <option value="2">2泊</option>
+            <option value="3">3泊</option>
+            <option value="4+">4泊以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="guests">人数</label>
+        <select id="guests" name="guests">
+          <option value="">選択してください</option>
+          <option value="1">1名</option>
+          <option value="2">2名</option>
+          <option value="3">3名</option>
+          <option value="4">4名</option>
+          <option value="5">5名</option>
+          <option value="6">6名</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+        <textarea id="message" name="message" rows="6" required placeholder="ご質問やご要望をご記入ください"></textarea>
+      </div>
+      <div class="form-row form-row--check">
+        <label>
+          <input type="checkbox" id="privacy" name="privacy" required />
+          <span>プライバシーポリシーに同意する</span>
+        </label>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-submit">送信する</button>
+      </div>
+      <p class="form-thanks" id="formThanks" hidden>
+        お問い合わせありがとうございます。2営業日以内にご返信いたします。
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================
+     Footer
+============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo-ja">ならまち古民家宿</p>
+        <p class="footer-logo-name">月日</p>
+        <p class="footer-logo-en">— tsukihi —</p>
+        <p class="footer-tagline">
+          家の記憶が、<br />旅の記憶になる。
+        </p>
+      </div>
+      <div class="footer-info">
+        <dl>
+          <dt>Address</dt>
+          <dd>〒630-0000<br />奈良県奈良市ならまち×-××-×</dd>
+          <dt>Tel</dt>
+          <dd>0742-00-0000<br /><span>受付 10:00-18:00</span></dd>
+          <dt>License</dt>
+          <dd>旅館業法許可番号<br />奈良市指令第0000号(サンプル)</dd>
+        </dl>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#room">客室</a></li>
+          <li><a href="#amenity">設備</a></li>
+          <li><a href="#price">料金</a></li>
+          <li><a href="#naramachi">ならまち</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">&copy; 2026 Naramachi Kominka Inn Tsukihi. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

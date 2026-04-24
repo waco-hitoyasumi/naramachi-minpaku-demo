@@ -756,7 +756,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* =========================================
    Room
 ========================================= */
-.section--room { background: var(--color-bg); }
+.section--room { background: var(--color-bg-warm); }
 .room-list {
   display: flex;
   flex-direction: column;
@@ -1169,18 +1169,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 160px 0;
   position: relative;
 }
-.section--naramachi::before,
-.section--naramachi::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--color-gold) 50%, transparent 100%);
-  transform: translateX(-50%);
-}
-.section--naramachi::before { top: 40px; }
-.section--naramachi::after  { bottom: 40px; }
 
 .naramachi-grid {
   display: grid;
@@ -1675,11 +1663,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
   .nara-spots-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
   .section--naramachi { padding: 120px 0; }
-  .section--naramachi::before { top: 24px; }
-  .section--naramachi::after { bottom: 24px; }
 
   .form-row--split { grid-template-columns: 1fr; }
   .btn-submit { padding: 18px 48px; letter-spacing: 0.2em; }
+
+  /* SP時: すべてのボタンを中央寄せ */
+  .digest-cta-wrap,
+  .price-cta,
+  .form-submit,
+  .home-cta { text-align: center; }
 }
 
 @media (max-width: 480px) {
